@@ -23,4 +23,5 @@ minikube service my-webapp
 net stop Jenkins
 net start Jenkins
 
-need tpu use "bat" for run script in window
+need to use "bat" for run script in window
+need to use "sh" for run script in linux
