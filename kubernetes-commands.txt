@@ -1,0 +1,24 @@
+minikube stop
+minikube delete
+minikube start
+minikube status
+minikube dashboard
+
+kubectl create deployment my-webapp --image=sachinsids/webapp-demo:01
+kubectl create deployment my-webapp --image=philippaul/node-demo-app:01
+kubectl get deployments
+kubectl get pods
+kubectl delete deployment my-webapp
+kubectl logs podName
+kubectl get services
+kubectl expose deployment my-webapp --type=LoadBalancer --port=3000
+kubectl scale deployment my-webapp --replicas=4
+kubectl apply -f .\deployment-node.yml
+kubectl delete -f .\deployment-node.yml
+
+minikube service my-webapp
+
+============================== JENKINS WINDOWS =============================
+
+net stop Jenkins
+net start Jenkins
